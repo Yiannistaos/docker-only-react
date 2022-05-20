@@ -9,6 +9,7 @@ services:
             dockerfile: Dockerfile
             context: ./nginx
         ports:
+            - '8085:80'
             - '80:80'
             - '443:443'
         volumes:
